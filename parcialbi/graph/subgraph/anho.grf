@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="RGamero" created="Thu May 16 13:40:01 CDT 2019" guiVersion="5.2.0.30" id="1558036580898" licenseCode="CLP1DUNIVE61501238EX" name="anho" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata1">
+<Record fieldDelimiter=";" name="anho" recordDelimiter="\n" type="delimited">
+<Field name="idanho" size="11" type="integer"/>
+<Field name="anho" size="45" type="string"/>
+</Record>
+</Metadata>
+<Metadata charset="IBM850" dataOffset="7521" id="Metadata0" recordSize="1064">
+<Record charset="IBM850" dataOffset="7521" label="educacion2009.dbf" name="educacion2009_dbf" previewAttachmentCharset="IBM850" recordSize="1064" type="fixed">
+<Field name="_IS_DELETED_" size="1" type="string"/>
+<Field name="A_O" size="4" type="string"/>
+</Record>
+</Metadata>
+<Metadata charset="IBM850" dataOffset="7585" id="Metadata4" recordSize="1158">
+<Record charset="IBM850" dataOffset="7585" label="educacion2010.dbf" name="educacion2010_dbf" previewAttachmentCharset="IBM850" recordSize="1158" type="fixed">
+<Field name="_IS_DELETED_" size="1" type="string"/>
+<Field name="A_O" size="4" type="string"/>
+</Record>
+</Metadata>
+<Metadata charset="IBM850" dataOffset="7521" id="Metadata2" recordSize="1068">
+<Record charset="IBM850" dataOffset="7521" label="educacion2011.dbf" name="educacion2011_dbf" previewAttachmentCharset="IBM850" recordSize="1068" type="fixed">
+<Field name="_IS_DELETED_" size="1" type="string"/>
+<Field name="A_O" size="4" type="string"/>
+</Record>
+</Metadata>
+<Metadata charset="IBM850" dataOffset="8001" id="Metadata3" recordSize="1146">
+<Record charset="IBM850" dataOffset="8001" label="educacion2012.dbf" name="educacion2012_dbf" previewAttachmentCharset="IBM850" recordSize="1146" type="fixed">
+<Field name="_IS_DELETED_" size="1" type="string"/>
+<Field name="A_O" size="4" type="string"/>
+</Record>
+</Metadata>
+<Connection database="MYSQL" dbURL="jdbc:mysql://localhost:3306/ulasallebi" id="JDBC0" jdbcSpecific="MYSQL" name="coneccionanho" password="root" type="JDBC" user="root"/>
+<GraphParameters>
+<GraphParameterFile fileURL="workspace.prm"/>
+</GraphParameters>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node fileURL="${DATAIN_DIR}/educacion/educacion2009.dbf" guiName="DBFDataReader" guiX="99" guiY="177" id="DBFDATA_READER" type="DBF_DATA_READER"/>
+<Node fileURL="${DATAIN_DIR}/educacion/educacion2011.dbf" guiName="DBFDataReader" guiX="99" guiY="288" id="DBFDATA_READER1" type="DBF_DATA_READER"/>
+<Node fileURL="${DATAIN_DIR}/educacion/educacion2012.dbf" guiName="DBFDataReader" guiX="99" guiY="405" id="DBFDATA_READER2" type="DBF_DATA_READER"/>
+<Node fileURL="${DATAIN_DIR}/educacion/educacion2010.dbf" guiName="DBFDataReader" guiX="99" guiY="540" id="DBFDATA_READER3" type="DBF_DATA_READER"/>
+<Node dbConnection="JDBC0" guiName="DBOutputTable" guiX="1111" guiY="341" id="DBOUTPUT_TABLE" type="DB_OUTPUT_TABLE">
+<attr name="sqlQuery"><![CDATA[INSERT INTO `ulasallebi`.`anho` (`idanho`, `anho`)
+VALUES ($idanho, $anho)]]></attr>
+</Node>
+<Node dedupKey="A_O(a)" guiName="Dedup" guiX="695" guiY="352" id="DEDUP" type="DEDUP"/>
+<Node guiName="ExtSort" guiX="483" guiY="346" id="EXT_SORT" sortKey="A_O(a)" type="EXT_SORT"/>
+<Node guiName="Merge" guiX="288" guiY="341" id="MERGE" mergeKey="A_O" type="MERGE"/>
+<Node guiName="Reformat" guiX="920" guiY="341" id="REFORMAT" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.anho = $in.0.A_O;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Edge fromNode="DBFDATA_READER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge4" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="MERGE:0"/>
+<Edge fromNode="DBFDATA_READER1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge5" inPort="Port 1 (in)" metadata="Metadata2" outPort="Port 0 (out)" toNode="MERGE:1"/>
+<Edge fromNode="DBFDATA_READER2:0" guiBendpoints="" guiRouter="Manhattan" id="Edge6" inPort="Port 2 (in)" metadata="Metadata3" outPort="Port 0 (out)" toNode="MERGE:2"/>
+<Edge fromNode="DBFDATA_READER3:0" guiBendpoints="" guiRouter="Manhattan" id="Edge7" inPort="Port 3 (in)" metadata="Metadata4" outPort="Port 0 (out)" toNode="MERGE:3"/>
+<Edge fromNode="DEDUP:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" outPort="Port 0 (unique)" toNode="REFORMAT:0"/>
+<Edge fromNode="EXT_SORT:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" outPort="Port 0 (out)" toNode="DEDUP:0"/>
+<Edge fromNode="MERGE:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" outPort="Port 0 (out)" toNode="EXT_SORT:0"/>
+<Edge fromNode="REFORMAT:0" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (out)" toNode="DBOUTPUT_TABLE:0"/>
+</Phase>
+</Graph>

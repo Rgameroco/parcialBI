@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="RGamero" created="Thu May 16 13:40:01 CDT 2019" guiVersion="5.2.0.30" id="1558044850085" licenseCode="CLP1DUNIVE61501238EX" name="educacion" showComponentDetails="true">
+<Global>
+<Metadata charset="IBM850" dataOffset="7585" id="Metadata1" recordSize="1158">
+<Record charset="IBM850" dataOffset="7585" label="educacion2010.dbf" name="educacion2010_dbf" previewAttachmentCharset="IBM850" recordSize="1158" type="fixed">
+<Field name="_IS_DELETED_" size="1" type="string"/>
+<Field name="A_O" size="4" type="string"/>
+<Field name="MES" size="2" type="string"/>
+<Field name="CONGLOME" size="4" type="string"/>
+<Field name="VIVIENDA" size="3" type="string"/>
+<Field name="HOGAR" size="2" type="string"/>
+<Field name="CODPERSO" size="2" type="string"/>
+<Field name="UBIGEO" size="6" type="string"/>
+<Field name="FACTOR" size="22" type="string"/>
+<Field length="12" name="DOMINIO" scale="0" size="4" type="decimal"/>
+<Field length="12" name="ESTRATO" scale="0" size="4" type="decimal"/>
+<Field name="CODINFOR" size="2" type="string"/>
+<Field length="12" name="P300N" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P300I" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P300A" scale="0" size="4" type="string"/>
+<Field length="12" name="P301A" scale="0" size="4" type="string"/>
+<Field length="12" name="P301B" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P301C" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P301D" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P301A0" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P301A1" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P302" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P302X" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P302A" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P302B" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P303" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P304A" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P304B" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P304C" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P304D" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P305" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P306" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P307" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P308A" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P308B" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P308C" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P308D" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3091A" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3091B" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3091C" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3092A" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3092B" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3092C" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P310" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311N_1" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311N_2" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311N_3" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311N_4" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311N_5" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311N_6" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311N_7" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311_1" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311_2" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311_3" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311_4" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311_5" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311_6" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311_7" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A1_1" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A1_2" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A1_3" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A1_4" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A1_5" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A1_6" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A1_7" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A2_1" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A2_2" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A2_3" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A2_4" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A2_5" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A2_6" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A2_7" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A3_1" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A3_2" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A3_3" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A3_4" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A3_5" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A3_6" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A3_7" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A4_1" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A4_2" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A4_3" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A4_4" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A4_5" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A4_6" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A4_7" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A5_1" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A5_2" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A5_3" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A5_4" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A5_5" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A5_6" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A5_7" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A6_1" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A6_2" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A6_3" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A6_4" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A6_5" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A6_6" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A6_7" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A7_1" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A7_2" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A7_3" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A7_4" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A7_5" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A7_6" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311A7_7" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311B_1" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P311B_2" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P311B_3" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P311B_4" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P311B_5" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P311B_6" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P311B_7" scale="0" size="11" type="decimal"/>
+<Field length="12" name="P311C_1" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311C_2" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311C_3" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311C_4" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311C_5" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311C_6" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311C_7" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311D_1" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P311D_2" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P311D_3" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P311D_4" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P311D_5" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P311D_6" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P311D_7" scale="0" size="11" type="decimal"/>
+<Field length="12" name="P311E_1" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P311E_2" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311E_3" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311E_4" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P311E_5" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311E_6" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P311E_7" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P311T1" scale="0" size="11" type="decimal"/>
+<Field length="12" name="P311T2" scale="0" size="11" type="decimal"/>
+<Field length="12" name="P3121" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3121A1" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3121A2" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3121A3" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3121A4" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3121A5" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3121A6" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3121B" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P3121C" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P3121D" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3122" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3122A1" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3122A2" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3122A3" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3122A4" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3122A5" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3122A6" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3122B" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P3122C" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P3122D" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P312T1" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P312T2" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P313A" scale="0" size="4" type="string"/>
+<Field length="12" name="P314A" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P314B_1" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P314B_2" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P314B_3" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P314B_4" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P314B_5" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P314C" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P314D" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3151" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3152" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3153" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3154" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3155" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P3156" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P315A" scale="0" size="6" type="decimal"/>
+<Field length="12" name="P315B" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P316_1" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P316_2" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P316_3" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P316_4" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P316_5" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P316_6" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P316_7" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P316A_1" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P316A_2" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P316A_3" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P316A_4" scale="0" size="4" type="decimal"/>
+<Field length="12" name="D311B_1" scale="0" size="6" type="decimal"/>
+<Field length="12" name="D311B_2" scale="0" size="6" type="decimal"/>
+<Field length="12" name="D311B_3" scale="0" size="6" type="decimal"/>
+<Field length="12" name="D311B_4" scale="0" size="6" type="decimal"/>
+<Field length="12" name="D311B_5" scale="0" size="6" type="decimal"/>
+<Field length="12" name="D311B_6" scale="0" size="6" type="decimal"/>
+<Field length="12" name="D311B_7" scale="0" size="11" type="decimal"/>
+<Field length="12" name="I311B_1" scale="0" size="6" type="decimal"/>
+<Field length="12" name="I311B_2" scale="0" size="6" type="decimal"/>
+<Field length="12" name="I311B_3" scale="0" size="6" type="decimal"/>
+<Field length="12" name="I311B_4" scale="0" size="6" type="decimal"/>
+<Field length="12" name="I311B_5" scale="0" size="6" type="decimal"/>
+<Field length="12" name="I311B_6" scale="0" size="6" type="decimal"/>
+<Field length="12" name="I311B_7" scale="0" size="11" type="decimal"/>
+<Field length="12" name="D311D_1" scale="0" size="6" type="decimal"/>
+<Field length="12" name="D311D_2" scale="0" size="6" type="decimal"/>
+<Field length="12" name="D311D_3" scale="0" size="6" type="decimal"/>
+<Field length="12" name="D311D_4" scale="0" size="6" type="decimal"/>
+<Field length="12" name="D311D_5" scale="0" size="6" type="decimal"/>
+<Field length="12" name="D311D_6" scale="0" size="6" type="decimal"/>
+<Field length="12" name="D311D_7" scale="0" size="11" type="decimal"/>
+<Field length="12" name="I311D_1" scale="0" size="6" type="decimal"/>
+<Field length="12" name="I311D_2" scale="0" size="6" type="decimal"/>
+<Field length="12" name="I311D_3" scale="0" size="6" type="decimal"/>
+<Field length="12" name="I311D_4" scale="0" size="6" type="decimal"/>
+<Field length="12" name="I311D_5" scale="0" size="6" type="decimal"/>
+<Field length="12" name="I311D_6" scale="0" size="6" type="decimal"/>
+<Field length="12" name="I311D_7" scale="0" size="11" type="decimal"/>
+<Field length="12" name="D3121B" scale="0" size="11" type="decimal"/>
+<Field length="12" name="I3121B" scale="0" size="11" type="decimal"/>
+<Field length="12" name="D3121C" scale="0" size="6" type="decimal"/>
+<Field length="12" name="I3121C" scale="0" size="6" type="decimal"/>
+<Field length="12" name="D3122B" scale="0" size="6" type="decimal"/>
+<Field length="12" name="I3122B" scale="0" size="6" type="decimal"/>
+<Field length="12" name="D3122C" scale="0" size="6" type="decimal"/>
+<Field length="12" name="I3122C" scale="0" size="6" type="decimal"/>
+<Field length="12" name="D315A" scale="0" size="6" type="decimal"/>
+<Field length="12" name="D315B" scale="0" size="6" type="decimal"/>
+<Field length="12" name="I315A" scale="0" size="6" type="decimal"/>
+<Field length="12" name="I315B" scale="0" size="6" type="decimal"/>
+<Field length="12" name="T313A" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P203" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P204" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P205" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P206" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P207" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P208A" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P209" scale="0" size="4" type="decimal"/>
+<Field length="12" name="IMPUTADO" scale="0" size="4" type="decimal"/>
+<Field name="FACTOR07" size="22" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata4">
+<Record fieldDelimiter=";" name="gradoestudio" recordDelimiter="\n" type="delimited">
+<Field name="idgradoestudio" size="11" type="integer"/>
+<Field name="nombre" size="150" type="string"/>
+</Record>
+</Metadata>
+<Connection database="MYSQL" dbURL="jdbc:mysql://localhost:3306/ulasallebi" id="JDBC0" jdbcSpecific="MYSQL" name="NewConnection" password="root" type="JDBC" user="root"/>
+<GraphParameters>
+<GraphParameterFile fileURL="workspace.prm"/>
+</GraphParameters>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node fileURL="${DATAIN_DIR}/educacion/educacion2010.dbf" guiName="DBFDataReader" guiX="389" guiY="272" id="DBFDATA_READER4" type="DBF_DATA_READER"/>
+<Node dbConnection="JDBC0" guiName="DBOutputTable" guiX="1283" guiY="259" id="DBOUTPUT_TABLE" type="DB_OUTPUT_TABLE">
+<attr name="sqlQuery"><![CDATA[INSERT INTO `ulasallebi`.`gradoestudio` (`idgradoestudio`, `nombre`)
+VALUES ($idgradoestudio, $nombre)]]></attr>
+</Node>
+<Node dedupKey="P301A(a)" guiName="Dedup" guiX="867" guiY="272" id="DEDUP1" type="DEDUP"/>
+<Node guiName="ExtSort" guiX="635" guiY="266" id="EXT_SORT1" sortKey="P301A(a)" type="EXT_SORT"/>
+<Node guiName="Reformat" guiX="1078" guiY="259" id="REFORMAT" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	integer id = -1;
+	if(trim($in.0.P301A) == ""){
+		id = 0;
+	}else id = str2integer(trim($in.0.P301A));
+	
+	
+	$out.0.idgradoestudio = id;
+	
+	switch(id){
+		case 0:
+		$out.0.nombre = "vacio";
+		case 1:
+		$out.0.nombre = "Sin nivel";
+		break;
+		case 2:
+		$out.0.nombre = "Educacion Inicial";
+		break;
+		case 3:
+		$out.0.nombre = "Primaria incompleta";
+		break;
+		case 4:
+		$out.0.nombre = "Primaria completa";
+		break;
+		case 5:
+		$out.0.nombre = "Secundaria incompleta";
+		break;
+		case 6:
+		$out.0.nombre = "Secundaria completa";
+		break;
+		case 7:
+		$out.0.nombre = "Superior no Universitaria Incompleta";
+		break;
+		case 8:
+		$out.0.nombre = "Superior no Universitaria Completa";
+		break;
+		case 9:
+		$out.0.nombre = "Superior Universitaria Incompleta";
+		break;
+		case 10:
+		$out.0.nombre = "Superior Universitaria Completa";
+		break;
+		case 11:
+		$out.0.nombre = "Post-Grado Universitario";
+		break;		
+		case 99:
+		$out.0.nombre = "Missing Value";
+		break;	
+	}
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Edge fromNode="DBFDATA_READER4:0" guiBendpoints="" guiRouter="Manhattan" id="Edge12" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (out)" toNode="EXT_SORT1:0"/>
+<Edge fromNode="DEDUP1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge18" inPort="Port 0 (in)" outPort="Port 0 (unique)" toNode="REFORMAT:0"/>
+<Edge fromNode="EXT_SORT1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge15" inPort="Port 0 (in)" outPort="Port 0 (out)" toNode="DEDUP1:0"/>
+<Edge fromNode="REFORMAT:0" guiBendpoints="" guiRouter="Manhattan" id="Edge7" inPort="Port 0 (in)" metadata="Metadata4" outPort="Port 0 (out)" toNode="DBOUTPUT_TABLE:0"/>
+</Phase>
+</Graph>

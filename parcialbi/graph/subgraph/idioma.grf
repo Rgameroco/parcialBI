@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="RGamero" created="Thu May 16 17:46:03 CDT 2019" guiVersion="5.2.0.30" id="1558049179688" licenseCode="CLP1DUNIVE61501238EX" name="idioma" showComponentDetails="true">
+<Global>
+<Metadata charset="IBM850" dataOffset="7521" id="Metadata0" recordSize="1068">
+<Record charset="IBM850" dataOffset="7521" label="educacion2011.dbf" name="educacion2011_dbf" previewAttachmentCharset="IBM850" recordSize="1068" type="fixed">
+<Field name="_IS_DELETED_" size="1" type="string"/>
+<Field name="A_O" size="4" type="string"/>
+<Field name="MES" size="2" type="string"/>
+<Field name="CONGLOME" size="4" type="string"/>
+<Field name="VIVIENDA" size="3" type="string"/>
+<Field name="HOGAR" size="2" type="string"/>
+<Field name="CODPERSO" size="2" type="string"/>
+<Field name="UBIGEO" size="6" type="string"/>
+<Field name="FACTOR" size="22" type="string"/>
+<Field length="12" name="DOMINIO" scale="0" size="4" type="decimal"/>
+<Field length="12" name="ESTRATO" scale="0" size="4" type="decimal"/>
+<Field name="CODINFOR" size="2" type="string"/>
+<Field length="12" name="P300N" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P300I" scale="0" size="4" type="decimal"/>
+<Field length="12" name="P300A" scale="0" size="4" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata2">
+<Record fieldDelimiter=";" name="idioma" recordDelimiter="\n" type="delimited">
+<Field name="ididioma" size="11" type="integer"/>
+<Field name="nombreidioma" size="45" type="string"/>
+</Record>
+</Metadata>
+<Connection database="MYSQL" dbURL="jdbc:mysql://localhost:3306/ulasallebi" id="JDBC0" jdbcSpecific="MYSQL" name="conencion" password="root" type="JDBC" user="root"/>
+<GraphParameters>
+<GraphParameterFile fileURL="workspace.prm"/>
+</GraphParameters>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node fileURL="${DATAIN_DIR}/educacion/educacion2011.dbf" guiName="DBFDataReader" guiX="330" guiY="210" id="DBFDATA_READER" type="DBF_DATA_READER"/>
+<Node dbConnection="JDBC0" guiName="DBOutputTable" guiX="1220" guiY="365" id="DBOUTPUT_TABLE" type="DB_OUTPUT_TABLE">
+<attr name="sqlQuery"><![CDATA[INSERT INTO `ulasallebi`.`idioma` (`ididioma`, `nombreidioma`)
+VALUES ($ididioma, $nombreidioma)]]></attr>
+</Node>
+<Node dedupKey="P300A(a)" guiName="Dedup" guiX="829" guiY="236" id="DEDUP" type="DEDUP"/>
+<Node guiName="ExtSort" guiX="577" guiY="236" id="EXT_SORT" sortKey="P300A(a)" type="EXT_SORT"/>
+<Node guiName="Reformat" guiX="1049" guiY="266" id="REFORMAT" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	integer id = -1;
+	if(trim($in.0.P300A) == ""){
+		id = 99;
+	}else id = str2integer(trim($in.0.P300A));
+	
+	$out.0.ididioma = id;
+
+	switch(id){
+		case 1: 
+		$out.0.nombreidioma = "Quechua";
+		break;
+		case 2: 
+		$out.0.nombreidioma = "Aymara";
+		break;
+		case 3: 
+		$out.0.nombreidioma = "Otra lengua nativa";
+		break;
+		case 4: 
+		$out.0.nombreidioma = "Castellano";
+		break;
+		case 5: 
+		$out.0.nombreidioma = "Ingles";
+		break;
+		case 6: 
+		$out.0.nombreidioma = "Portugués";
+		break;
+		case 7: 
+		$out.0.nombreidioma = "Otra lengua extranjera";
+		break;
+		case 8: 
+		$out.0.nombreidioma = "Es sordo mudo";
+		break;
+		case 99: 
+		$out.0.nombreidioma = "Missing value";
+		break;
+	}
+
+	return ALL;
+}
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Edge fromNode="DBFDATA_READER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="EXT_SORT:0"/>
+<Edge fromNode="DEDUP:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" outPort="Port 0 (unique)" toNode="REFORMAT:0"/>
+<Edge fromNode="EXT_SORT:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" outPort="Port 0 (out)" toNode="DEDUP:0"/>
+<Edge fromNode="REFORMAT:0" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 0 (out)" toNode="DBOUTPUT_TABLE:0"/>
+</Phase>
+</Graph>

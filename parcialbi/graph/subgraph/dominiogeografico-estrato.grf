@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="RGamero" created="Thu May 16 13:40:01 CDT 2019" guiVersion="5.2.0.30" id="1558037701065" licenseCode="CLP1DUNIVE61501238EX" name="dominiogeografico" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata4">
+<Record fieldDelimiter=";" name="dominiogeografico" recordDelimiter="\n" type="delimited">
+<Field name="iddominiogeografico" size="11" type="integer"/>
+<Field name="nombre" size="150" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata5">
+<Record fieldDelimiter=";" name="estratogeografico" recordDelimiter="\n" type="delimited">
+<Field name="idestratogeografico" size="11" type="integer"/>
+<Field name="nombreestratogeografico" size="150" type="string"/>
+</Record>
+</Metadata>
+<Metadata charset="windows-1252" dataOffset="5345" id="Metadata6" recordSize="787">
+<Record charset="windows-1252" dataOffset="5345" label="vivienda 2009.dbf" name="vivienda_2009_dbf" previewAttachmentCharset="windows-1252" recordSize="787" type="fixed">
+<Field name="_IS_DELETED_" size="1" type="string"/>
+<Field name="A_O" size="4" type="string"/>
+<Field name="MES" size="2" type="string"/>
+<Field name="CONGLOME" size="4" type="string"/>
+<Field name="VIVIENDA" size="3" type="string"/>
+<Field name="HOGAR" size="2" type="string"/>
+<Field name="UBIGEO" size="6" type="string"/>
+<Field name="FACTOR" size="22" type="string"/>
+<Field length="12" name="DOMINIO" scale="0" size="4" type="string"/>
+<Field length="12" name="ESTRATO" scale="0" size="4" type="string"/>
+</Record>
+</Metadata>
+<Metadata charset="IBM850" dataOffset="5345" id="Metadata1" recordSize="781">
+<Record charset="IBM850" dataOffset="5345" label="vivienda 2010.dbf" name="vivienda_2010_dbf" previewAttachmentCharset="IBM850" recordSize="781" type="fixed">
+<Field name="_IS_DELETED_" size="1" type="string"/>
+<Field name="A_O" size="4" type="string"/>
+<Field name="MES" size="2" type="string"/>
+<Field name="CONGLOME" size="4" type="string"/>
+<Field name="VIVIENDA" size="3" type="string"/>
+<Field name="HOGAR" size="2" type="string"/>
+<Field name="UBIGEO" size="6" type="string"/>
+<Field name="FACTOR" size="22" type="string"/>
+<Field length="12" name="DOMINIO" scale="0" size="4" type="string"/>
+<Field length="12" name="ESTRATO" scale="0" size="4" type="string"/>
+</Record>
+</Metadata>
+<Metadata charset="IBM850" dataOffset="5377" id="Metadata0" recordSize="797">
+<Record charset="IBM850" dataOffset="5377" label="vivienda 2011.dbf" name="vivienda_2011_dbf" previewAttachmentCharset="IBM850" recordSize="797" type="fixed">
+<Field name="_IS_DELETED_" size="1" type="string"/>
+<Field name="A_O" size="4" type="string"/>
+<Field name="MES" size="2" type="string"/>
+<Field name="CONGLOME" size="4" type="string"/>
+<Field name="VIVIENDA" size="3" type="string"/>
+<Field name="HOGAR" size="2" type="string"/>
+<Field name="UBIGEO" size="6" type="string"/>
+<Field name="FACTOR" size="22" type="string"/>
+<Field length="12" name="DOMINIO" scale="0" size="4" type="string"/>
+<Field length="12" name="ESTRATO" scale="0" size="4" type="string"/>
+</Record>
+</Metadata>
+<Metadata charset="IBM850" dataOffset="7617" id="Metadata2" recordSize="1147">
+<Record charset="IBM850" dataOffset="7617" label="vivienda 2012.dbf" name="vivienda_2012_dbf" previewAttachmentCharset="IBM850" recordSize="1147" type="fixed">
+<Field name="_IS_DELETED_" size="1" type="string"/>
+<Field name="A_O" size="4" type="string"/>
+<Field name="MES" size="2" type="string"/>
+<Field name="CONGLOME" size="4" type="string"/>
+<Field name="VIVIENDA" size="3" type="string"/>
+<Field name="HOGAR" size="2" type="string"/>
+<Field name="UBIGEO" size="6" type="string"/>
+<Field name="FACTOR" size="22" type="string"/>
+<Field length="12" name="DOMINIO" scale="0" size="4" type="string"/>
+<Field length="12" name="ESTRATO" scale="0" size="4" type="string"/>
+</Record>
+</Metadata>
+<Connection database="MYSQL" dbURL="jdbc:mysql://localhost:3306/ulasallebi" id="JDBC0" jdbcSpecific="MYSQL" name="ulsabi" password="root" type="JDBC" user="root"/>
+<GraphParameters>
+<GraphParameterFile fileURL="workspace.prm"/>
+</GraphParameters>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node fileURL="${DATAIN_DIR}/vivienda/vivienda 2009.dbf" guiName="DBFDataReader" guiX="108" guiY="37" id="DBFDATA_READER" type="DBF_DATA_READER"/>
+<Node fileURL="${DATAIN_DIR}/vivienda/vivienda 2010.dbf" guiName="DBFDataReader" guiX="87" guiY="182" id="DBFDATA_READER1" type="DBF_DATA_READER"/>
+<Node fileURL="${DATAIN_DIR}/vivienda/vivienda 2011.dbf" guiName="DBFDataReader" guiX="87" guiY="319" id="DBFDATA_READER2" type="DBF_DATA_READER"/>
+<Node fileURL="${DATAIN_DIR}/vivienda/vivienda 2012.dbf" guiName="DBFDataReader" guiX="97" guiY="433" id="DBFDATA_READER3" type="DBF_DATA_READER"/>
+<Node fileURL="${DATAIN_DIR}/vivienda/vivienda 2010.dbf" guiName="DBFDataReader" guiX="97" guiY="684" id="DBFDATA_READER4" type="DBF_DATA_READER"/>
+<Node fileURL="${DATAIN_DIR}/vivienda/vivienda 2012.dbf" guiName="DBFDataReader" guiX="97" guiY="913" id="DBFDATA_READER5" type="DBF_DATA_READER"/>
+<Node fileURL="${DATAIN_DIR}/vivienda/vivienda 2011.dbf" guiName="DBFDataReader" guiX="97" guiY="798" id="DBFDATA_READER6" type="DBF_DATA_READER"/>
+<Node fileURL="${DATAIN_DIR}/vivienda/vivienda 2009.dbf" guiName="DBFDataReader" guiX="97" guiY="570" id="DBFDATA_READER7" type="DBF_DATA_READER"/>
+<Node dbConnection="JDBC0" guiName="DBOutputTable" guiX="1180" guiY="295" id="DBOUTPUT_TABLE" type="DB_OUTPUT_TABLE">
+<attr name="sqlQuery"><![CDATA[INSERT INTO `ulasallebi`.`dominiogeografico` (`iddominiogeografico`, `nombre`)
+VALUES ($iddominiogeografico, $nombre)]]></attr>
+</Node>
+<Node dbConnection="JDBC0" guiName="DBOutputTable" guiX="1213" guiY="754" id="DBOUTPUT_TABLE1" type="DB_OUTPUT_TABLE">
+<attr name="sqlQuery"><![CDATA[INSERT INTO `ulasallebi`.`estratogeografico` (`idestratogeografico`, `nombreestratogeografico`)
+VALUES ($idestratogeografico, $nombreestratogeografico)]]></attr>
+</Node>
+<Node dedupKey="DOMINIO(a)" guiName="Dedup" guiX="815" guiY="314" id="DEDUP" type="DEDUP"/>
+<Node dedupKey="ESTRATO(a)" guiName="Dedup" guiX="839" guiY="765" id="DEDUP1" type="DEDUP"/>
+<Node guiName="ExtSort" guiX="601" guiY="312" id="EXT_SORT" sortKey="DOMINIO(a)" type="EXT_SORT"/>
+<Node guiName="ExtSort" guiX="676" guiY="759" id="EXT_SORT1" sortKey="ESTRATO(a)" type="EXT_SORT"/>
+<Node guiName="Merge" guiX="427" guiY="303" id="MERGE" mergeKey="A_O" type="MERGE"/>
+<Node guiName="Merge" guiX="465" guiY="754" id="MERGE1" mergeKey="A_O" type="MERGE"/>
+<Node guiName="Reformat" guiX="1017" guiY="295" id="REFORMAT" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	integer id = str2integer(trim($in.0.DOMINIO));
+	$out.0.iddominiogeografico = id;
+	switch(id){
+		case 0:
+		$out.0.nombre = "vacio";
+		case 1:
+		$out.0.nombre = "Costa Norte";
+		break;
+		case 2:
+		$out.0.nombre = "Costa Centro";
+		break;
+		case 3:
+		$out.0.nombre = "Costa Sur";
+		break;
+		case 4:
+		$out.0.nombre = "Sierra Norte";
+		break;
+		case 5:
+		$out.0.nombre = "Sierra Centro";
+		break;
+		case 6:
+		$out.0.nombre = "Sierra Sur";
+		break;
+		case 7:
+		$out.0.nombre = "Selva";
+		break;
+		case 8:
+		$out.0.nombre = "Lima Metropolitana";
+		break;
+
+	}
+	
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node guiName="Reformat" guiX="1025" guiY="754" id="REFORMAT1" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	integer id = str2integer(trim($in.0.ESTRATO));
+	$out.0.idestratogeografico = id;
+	switch(id){
+		case 0:
+		$out.0.nombreestratogeografico = "vacio";
+		case 1:
+		$out.0.nombreestratogeografico = "Centros Poblados de más de 100,000 viviendas";
+		break;
+		case 2:
+		$out.0.nombreestratogeografico = "Centros Poblados de 20,001 a 100,000 viviendas";
+		break;
+		case 3:
+		$out.0.nombreestratogeografico = "Centros Poblados de 10,001 a 20,000 viviendas";
+		break;
+		case 4:
+		$out.0.nombreestratogeografico = "Centros Poblados de 4,001 a 10,000 viviendas";
+		break;
+		case 5:
+		$out.0.nombreestratogeografico = "Centros Poblados de 401 a 4,000 viviendas";
+		break;
+		case 6:
+		$out.0.nombreestratogeografico = "Centros Poblados con menos de 401 viviendas";
+		break;
+		case 7:
+		$out.0.nombreestratogeografico = "Area de empadronamiento rural compuesta - AER Compuesto";
+		break;
+		case 8:
+		$out.0.nombreestratogeografico = "Area de empadronamiento rural simple - AER Simple";
+		break;
+
+	}
+	
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Edge fromNode="DBFDATA_READER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata6" outPort="Port 0 (out)" toNode="MERGE:0"/>
+<Edge fromNode="DBFDATA_READER1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 1 (in)" metadata="Metadata1" outPort="Port 0 (out)" toNode="MERGE:1"/>
+<Edge fromNode="DBFDATA_READER2:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 2 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="MERGE:2"/>
+<Edge fromNode="DBFDATA_READER3:0" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 3 (in)" metadata="Metadata2" outPort="Port 0 (out)" toNode="MERGE:3"/>
+<Edge fromNode="DBFDATA_READER4:0" guiBendpoints="" guiRouter="Manhattan" id="Edge14" inPort="Port 1 (in)" metadata="Metadata1" outPort="Port 0 (out)" toNode="MERGE1:1"/>
+<Edge fromNode="DBFDATA_READER5:0" guiBendpoints="" guiRouter="Manhattan" id="Edge12" inPort="Port 3 (in)" metadata="Metadata2" outPort="Port 0 (out)" toNode="MERGE1:3"/>
+<Edge fromNode="DBFDATA_READER6:0" guiBendpoints="" guiRouter="Manhattan" id="Edge13" inPort="Port 2 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="MERGE1:2"/>
+<Edge fromNode="DBFDATA_READER7:0" guiBendpoints="" guiRouter="Manhattan" id="Edge15" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (out)" toNode="MERGE1:0"/>
+<Edge fromNode="DEDUP:0" guiBendpoints="" guiRouter="Manhattan" id="Edge9" inPort="Port 0 (in)" outPort="Port 0 (unique)" toNode="REFORMAT:0"/>
+<Edge fromNode="DEDUP1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge10" inPort="Port 0 (in)" outPort="Port 0 (unique)" toNode="REFORMAT1:0"/>
+<Edge fromNode="EXT_SORT:0" guiBendpoints="" guiRouter="Manhattan" id="Edge5" inPort="Port 0 (in)" outPort="Port 0 (out)" toNode="DEDUP:0"/>
+<Edge fromNode="EXT_SORT1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge6" inPort="Port 0 (in)" outPort="Port 0 (out)" toNode="DEDUP1:0"/>
+<Edge fromNode="MERGE:0" guiBendpoints="" guiRouter="Manhattan" id="Edge4" inPort="Port 0 (in)" outPort="Port 0 (out)" toNode="EXT_SORT:0"/>
+<Edge fromNode="MERGE1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge11" inPort="Port 0 (in)" outPort="Port 0 (out)" toNode="EXT_SORT1:0"/>
+<Edge fromNode="REFORMAT:0" guiBendpoints="" guiRouter="Manhattan" id="Edge7" inPort="Port 0 (in)" metadata="Metadata4" outPort="Port 0 (out)" toNode="DBOUTPUT_TABLE:0"/>
+<Edge fromNode="REFORMAT1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge8" inPort="Port 0 (in)" metadata="Metadata5" outPort="Port 0 (out)" toNode="DBOUTPUT_TABLE1:0"/>
+</Phase>
+</Graph>
